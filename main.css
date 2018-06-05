@@ -1,19 +1,172 @@
 *{
   box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
 }
+
 
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  color: #54585a;
-width: 100%;
+  width: 100%;
+  background-color: #fff;
 }
 
-/************************************/
+/* HERO SECTION */
 
-/*QUIENES*/
+.imagen-principal {
+  background: url("./images/cabecera.jpg") no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 421px;
+  position: relative;
+}
+
+.title {
+  background-color: rgba(9, 157, 141, 0.9);
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+  display: inline-block;
+  z-index: 10;
+  position: fixed;
+}
+
+.nav-menu {
+  list-style: none;
+  background-color: rgba(20, 217, 196, 0.9);
+  height: 45px;
+  width: 100%;
+  top: 60px;
+  z-index: 10;
+  position: fixed;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  color: #fff;
+
+}
+
+.nav-link {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+}
+
+.claim-box {
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px;
+  top:360px;
+  position: absolute;
+}
+
+.claim {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.text {
+  background-color: #fff;
+  z-index: 5;
+  margin-top: 40px;
+}
+
+.equipo{
+  text-transform: uppercase;
+  text-align: center;
+  color: #099d8d;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+/* FIRST MAIN */
+
+.contenedor {
+  margin-top: 70px;
+}
+
+.contendor-equipo{
+  display:block;
+  width: 320px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contenedor-fortalezas {
+  padding-top: 30px;
+}
+
+.contendor-debilidades {
+  padding-bottom: 45px;
+}
+
+.fortalezas-y-debilidades {
+  background-color: #f1f1f1;
+}
+
+.verde{
+  color:#099D8D;
+  font-family: 'Rubik', sans-serif,'400';
+  font-size:24px;
+  line:45px;
+  text-align: center;
+}
+
+.parrafo{
+  color: #54585A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line: 24px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 30px;
+}
+
+.subtitulo {
+  font-size: 22px;
+}
+
+
+.triangulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid white;
+  border-left: 15px solid #F1F1F1;
+  border-right: 15px solid #F1F1F1;
+}
+
+/* SECOND MAIN */
 
 .quienes_somos{
 margin: 0;
@@ -38,10 +191,11 @@ border: 2px solid black;
   width: 100%;;
 }
 
-.biografia h4 {
+.contenedor-biografia h4 {
   color: #000000;
   font-size: 20px;
   font-weight: normal;
+
 }
 
 .foto {
@@ -54,6 +208,7 @@ p {
   margin-bottom: 15px;
   margin-top: 15px;
   font-weight:lighter;
+  color: #54585a;
 
 }
 .fab, .fas {
@@ -103,7 +258,8 @@ p {
   padding: 0;
   width: 100%;
 }
-a:link, a:visited, a:active{
+
+.footer-link :link :visited :active {
   text-decoration: none;
   color:#54585A;
 }
