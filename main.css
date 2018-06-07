@@ -111,6 +111,12 @@ body {
   margin-top: 70px;
 }
 
+@media all and (min-width:768px) {
+  .contenedor {
+    margin-top: 85px;
+  }
+}
+
 .contendor-equipo{
   display:block;
   width: 320px;
@@ -118,16 +124,54 @@ body {
   margin-bottom: 30px;
 }
 
+@media all and (min-width:768px){
+.contenedor-equipo {
+margin-bottom: 60px;
+  }
+}
+
 .contenedor-fortalezas {
   padding-top: 30px;
+}
+/*
+@media all and (min-width:768px) {
+.contendor-fortalezas {
+margin-top: 45px;
+}
+}
+*/
+@media all and (min-width:768px) {
+.contenedor-fortalezas {
+width: 50%;
+margin-top: 15px;
+margin-right: 15px;
+/*margin-bottom: 60px;??*/
+}
 }
 
 .contendor-debilidades {
   padding-bottom: 45px;
 }
 
+@media all and (min-width:768px) {
+.contenedor-debilidades {
+width: 50%;
+margin-left: 15px;
+margin-top: 45px;
+}
+}
+
 .fortalezas-y-debilidades {
   background-color: #f1f1f1;
+}
+
+@media all and (min-width:768px) {
+.fortalezas-y-debilidades {
+margin-top: 45px;
+/*margin-bottom: 60px;*/
+display: flex;
+
+  }
 }
 
 .verde{
@@ -142,12 +186,17 @@ body {
   color: #54585A;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line: 24px;
   text-align: center;
   padding-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
   padding-bottom: 30px;
+}
+/*revisar parrafo*/
+@media all and (min-width:768px) {
+.parrafo {
+margin-bottom: 60px;
+}
 }
 
 .subtitulo {
@@ -169,9 +218,9 @@ body {
 /* SECOND MAIN */
 
 .quienes_somos{
-margin: 0;
-padding: 0;
-border: 2px solid black;
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
 }
 
 .titulo {
@@ -275,7 +324,7 @@ p {
 /*************CSS CONTACTO****************/
 /*************CSS CONTACTO****************/
 .contenedor-form{
-font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #54585A;
 }
 .contacto{
@@ -286,23 +335,23 @@ font-family: 'Open Sans', sans-serif;
   flex-direction: column;
 }
 .titulo-contacto {
-margin: 30px auto 15px auto;
-font-size: 20px;
-font-weight: 700;
-color: #499d8d;
+  margin: 30px auto 15px auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #499d8d;
 }
 .recomendacion {
   margin-top: 45px;
-color: #54585A;
-font-size: 12px;
+  color: #54585A;
+  font-size: 12px;
 }
 .asterisco {
-color:#00ffda;
+  color:#00ffda;
 }
 .form {
   width: 100%;
   padding: 0 15px;
-margin-top: 60px;
+  margin-top: 60px;
   text-align: left;
 
 }
