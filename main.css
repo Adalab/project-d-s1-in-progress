@@ -27,6 +27,12 @@ body {
   position: relative;
 }
 
+@media all and (min-width: 1200px) {
+  .imagen-principal {
+    height: 550px;
+  }
+}
+
 .title {
   background-color: rgba(9, 157, 141, 0.9);
   color: #fff;
@@ -43,6 +49,19 @@ body {
   position: fixed;
 }
 
+@media all and (min-width:768px) {
+  .header {
+    width: 100%;
+    background-color: rgba(9, 157, 141, 0.9);
+  }
+
+  .title {
+    width: 50%;
+    padding-left: 45px;
+    text-align: left;
+  }
+}
+
 .nav-menu {
   list-style: none;
   background-color: rgba(20, 217, 196, 0.9);
@@ -55,7 +74,18 @@ body {
   justify-content:space-around;
   align-items: center;
   color: #fff;
+}
 
+@media all and (min-width: 768px) {
+  .nav-menu {
+    background-color: rgba(9, 157, 141, 0.9);
+    height: 60px;
+    top: 0;
+    width: 50%;
+    margin-left: 50%;
+    padding-right: 45px;
+    justify-content: flex-end;
+  }
 }
 
 .nav-link {
@@ -65,6 +95,12 @@ body {
   font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+  .nav-link {
+    padding-left: 20px;
+  }
 }
 
 .container {
@@ -79,6 +115,22 @@ body {
   position: absolute;
 }
 
+@media all and (min-width: 768px) {
+  .claim-box {
+    background-color: #ffffff90;
+    top: 300px;
+    width: 441px;
+    padding: 15px 30px 15px 30px;
+    margin-left: 50px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .claim-box {
+    top: 429px;
+  }
+}
+
 .claim {
   color: #000;
   font-family: 'Open Sans', sans-serif;
@@ -88,21 +140,10 @@ body {
   text-align: center;
 }
 
-.text {
-  background-color: #fff;
-  z-index: 5;
-  margin-top: 40px;
-}
-
-.equipo{
-  text-transform: uppercase;
-  text-align: center;
-  color: #099d8d;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  padding-top: 30px;
-  padding-bottom: 15px;
+@media all and (min-width: 1200px) {
+  .claim {
+    font-size: 24px;
+  }
 }
 
 /* FIRST MAIN */
