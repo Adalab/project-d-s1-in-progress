@@ -300,7 +300,7 @@ p {
   width: 100%;
 }
 
-.footer-link :link :visited :active {
+.footer-link {
   text-decoration: none;
   color:#54585A;
 }
@@ -376,3 +376,6 @@ p {
   border-radius: 3px;
   margin: 30px 0 60px 0;
 }
+
+
+/****************anclas********/
