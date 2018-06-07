@@ -169,9 +169,9 @@ body {
 /* SECOND MAIN */
 
 .quienes_somos{
-margin: 0;
-padding: 0;
-border: 2px solid black;
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
 }
 
 .titulo {
@@ -231,9 +231,32 @@ p {
 
 /****************FOOTER***************/
 
+
+/*
+
+
+@media all and (min-width:768px) {
+        margin: 0 40px;
+    }
+    @media all and (min-width:1280px) {
+        margin: 0 auto;
+        max-widh: 1200px;
+    }
+
+
+*/
+
+
 .footer {
   text-align: center;
 }
+@media all and (min-width:768px) {
+  .footer{
+    position:relative;
+  }
+}
+
+
 
 .enmedio {
   border-top-style:solid;
@@ -247,6 +270,12 @@ p {
   padding-top: 30px;
   margin-bottom: 20px;
 }
+@media all and (min-width:768px) {
+  .enmedio{
+    position:absolute;
+  }
+}
+
 
 .nav-footer {
   font-size: 14px;
@@ -258,24 +287,47 @@ p {
   padding: 0;
   width: 100%;
 }
+@media all and (min-width:768px) {
+  .nav-footer{
 
-.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+}
+
+.link-nav-footer a {
   text-decoration: none;
   color:#54585A;
 }
 
 .imagen-footer{
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   margin-bottom: 45px;
   margin-top: 30px;
   width: 100%;
+}
+@media all and (min-width:768px) {
+  .imagen-footer{
+    display: flex;
+    align-items: flex-start;
+    margin: 70px;
+  }
+}
+
+
+.no-decoracion-enlace {
+  text-decoration: none;
+  color: #fff;
 }
 
 
 /*************CSS CONTACTO****************/
 /*************CSS CONTACTO****************/
 .contenedor-form{
-font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #54585A;
 }
 .contacto{
@@ -286,23 +338,23 @@ font-family: 'Open Sans', sans-serif;
   flex-direction: column;
 }
 .titulo-contacto {
-margin: 30px auto 15px auto;
-font-size: 20px;
-font-weight: 700;
-color: #499d8d;
+  margin: 30px auto 15px auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #499d8d;
 }
 .recomendacion {
   margin-top: 45px;
-color: #54585A;
-font-size: 12px;
+  color: #54585A;
+  font-size: 12px;
 }
 .asterisco {
-color:#00ffda;
+  color:#00ffda;
 }
 .form {
   width: 100%;
   padding: 0 15px;
-margin-top: 60px;
+  margin-top: 60px;
   text-align: left;
 
 }
