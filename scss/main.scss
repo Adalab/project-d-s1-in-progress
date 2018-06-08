@@ -170,6 +170,21 @@ margin-bottom: 60px;
   }
 }
 
+.fortalezas-y-debilidades {
+  background-color: #f1f1f1;
+}
+
+@media all and (min-width:768px) {
+.fortalezas-y-debilidades {
+margin-top: 45px;
+/*margin-bottom: 60px;*/
+display: flex;
+flex-direction: column;
+  }
+}
+
+
+
 .contenedor-fortalezas {
   padding-top: 30px;
 }
@@ -201,19 +216,7 @@ margin-top: 45px;
 }
 }
 
-.fortalezas-y-debilidades {
-  background-color: #f1f1f1;
-}
 
-@media all and (min-width:768px) {
-.fortalezas-y-debilidades {
-margin-top: 45px;
-/*margin-bottom: 60px;*/
-display: flex;
-flex-direction: column;
-
-  }
-}
 
 .verde{
   color:#099D8D;
