@@ -247,21 +247,30 @@ p {
   color: #54585a;
 }
 
-.fab .fas {
-  color: #099d8d;
-}
-
 .redes-sociales {
   display: flex;
+  position: relative;
   list-style: none;
   padding: 0;
   justify-content: center;
 }
 
-.redes-sociales li {
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
+.redes-sociales .link a{
+  color: #099d8d;
+}
+
+.redes-sociales .link::before {
+  display: inline-block;
+  margin: 5px 10px;
+  width: 3px;
+  height: 3px;
+  background-color: #499d8d;
+  border-radius: 10px;
+  content: '';
+}
+
+.redes-sociales .link:first-child::before {
+  content: none;
 }
 
 //*******************FOOTER*********************//

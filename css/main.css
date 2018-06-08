@@ -15,6 +15,7 @@ body {
 }
 
 /* HERO SECTION */
+
 .imagen-principal {
   background: url("images/cabecera.jpg") no-repeat left center;
   -webkit-background-size: cover;
@@ -30,6 +31,7 @@ body {
     height: 550px;
   }
 }
+
 .title {
   background-color: rgba(9, 157, 141, 0.9);
   color: #fff;
@@ -58,6 +60,7 @@ body {
     text-align: left;
   }
 }
+
 .nav-menu {
   list-style: none;
   background-color: rgba(20, 217, 196, 0.9);
@@ -83,6 +86,7 @@ body {
     justify-content: flex-end;
   }
 }
+
 .nav-link {
   color: #fff;
   font-family: 'Rubik', sans-serif;
@@ -97,6 +101,7 @@ body {
     padding-left: 20px;
   }
 }
+
 .container {
   position: relative;
 }
@@ -118,11 +123,13 @@ body {
     margin-left: 50px;
   }
 }
+
 @media all and (min-width: 1200px) {
   .claim-box {
     top: 429px;
   }
 }
+
 .claim {
   color: #000;
   font-family: 'Open Sans', sans-serif;
@@ -137,7 +144,9 @@ body {
     font-size: 24px;
   }
 }
+
 /* FIRST MAIN */
+
 .contenedor {
   margin-top: 70px;
 }
@@ -195,6 +204,7 @@ body {
 }
 
 /* SECOND MAIN */
+
 .quienes_somos {
   margin: 0;
   padding: 0;
@@ -237,22 +247,33 @@ p {
   color: #54585a;
 }
 
-.fab .fas {
-  color: #099d8d;
-}
-
 .redes-sociales {
   display: flex;
+  position: relative;
   list-style: none;
   padding: 0;
   justify-content: center;
 }
 
-.redes-sociales li {
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
+.redes-sociales .link a{
+  color: #099d8d;
 }
+
+.redes-sociales .link::before {
+  display: inline-block;
+  margin: 5px 10px;
+  width: 3px;
+  height: 3px;
+  background-color: #499d8d;
+  border-radius: 10px;
+  content: '';
+}
+
+.redes-sociales .link:first-child::before {
+  content: none;
+}
+
+//*******************FOOTER*********************//
 
 .footer {
   text-align: center;
@@ -263,6 +284,7 @@ p {
     position: relative;
   }
 }
+
 .enmedio {
   border-top-style: solid;
   border-color: grey;
@@ -280,6 +302,7 @@ p {
     position: absolute;
   }
 }
+
 .nav-footer {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -299,6 +322,7 @@ p {
     margin-top: 25px;
   }
 }
+
 .link-nav-footer a {
   text-decoration: none;
   color: #54585A;
@@ -319,10 +343,14 @@ p {
     margin: 70px;
   }
 }
+
 .no-decoracion-enlace {
   text-decoration: none;
   color: #fff;
 }
+
+
+
 
 /*************CSS CONTACTO****************/
 /*************CSS CONTACTO****************/
@@ -390,5 +418,3 @@ p {
   border-radius: 3px;
   margin: 30px 0 60px 0;
 }
-
-/*# sourceMappingURL=main.css.map */
