@@ -273,12 +273,11 @@ p {
 @media all and (min-width: 768px) {
   .footer {
     position: relative;
+    border: 2px solid blue;
   }
 }
 
 .enmedio {
-  border-top-style: solid;
-  border-color: grey;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   color: #b8b8b9;
@@ -291,6 +290,7 @@ p {
 @media all and (min-width: 768px) {
   .enmedio {
     position: absolute;
+    border: 2px solid blue;
   }
 }
 
@@ -311,6 +311,7 @@ p {
     flex-direction: column;
     align-items: flex-end;
     margin-top: 25px;
+
   }
 }
 
@@ -324,14 +325,13 @@ p {
   justify-content: center;
   margin-bottom: 45px;
   margin-top: 30px;
-  width: 100%;
 }
 
 @media all and (min-width: 768px) {
   .imagen-footer {
-    display: flex;
+    margin: 0;
+    padding: 0;
     align-items: flex-start;
-    margin: 70px;
   }
 }
 
@@ -340,10 +340,6 @@ p {
   color: #fff;
 }
 
-
-
-
-/*************CSS CONTACTO****************/
 /*************CSS CONTACTO****************/
 .contenedor-form {
   font-family: 'Open Sans', sans-serif;
