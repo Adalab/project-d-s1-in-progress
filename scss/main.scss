@@ -304,21 +304,30 @@ p {
   color: #54585a;
 }
 
-.fab .fas {
-  color: #099d8d;
-}
-
 .redes-sociales {
   display: flex;
+  position: relative;
   list-style: none;
   padding: 0;
   justify-content: center;
 }
 
-.redes-sociales li {
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
+.redes-sociales .link a{
+  color: #099d8d;
+}
+
+.redes-sociales .link::before {
+  display: inline-block;
+  margin: 5px 10px;
+  width: 3px;
+  height: 3px;
+  background-color: #499d8d;
+  border-radius: 10px;
+  content: '';
+}
+
+.redes-sociales .link:first-child::before {
+  content: none;
 }
 
 //*******************FOOTER*********************//
@@ -334,8 +343,6 @@ p {
 }
 
 .enmedio {
-  border-top-style: solid;
-  border-color: grey;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   color: #b8b8b9;
@@ -368,6 +375,7 @@ p {
     flex-direction: column;
     align-items: flex-end;
     margin-top: 25px;
+
   }
 }
 
@@ -381,14 +389,13 @@ p {
   justify-content: center;
   margin-bottom: 45px;
   margin-top: 30px;
-  width: 100%;
 }
 
 @media all and (min-width: 768px) {
   .imagen-footer {
-    display: flex;
+    margin: 0;
+    padding: 0;
     align-items: flex-start;
-    margin: 70px;
   }
 }
 
@@ -397,10 +404,6 @@ p {
   color: #fff;
 }
 
-
-
-
-/*************CSS CONTACTO****************/
 /*************CSS CONTACTO****************/
 .contenedor-form {
   font-family: 'Open Sans', sans-serif;
