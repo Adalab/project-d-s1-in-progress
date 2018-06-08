@@ -16,7 +16,7 @@ body {
 
 /* HERO SECTION */
 .imagen-principal {
-  background: url("images/cabecera.jpg") no-repeat left center;
+  background: url("../images/cabecera.jpg") no-repeat left center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
