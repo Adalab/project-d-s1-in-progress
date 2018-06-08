@@ -15,9 +15,8 @@ body {
 }
 
 /* HERO SECTION */
-
 .imagen-principal {
-  background: url("images/cabecera.jpg") no-repeat left center;
+  background: url("../images/cabecera.jpg") no-repeat left center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,7 +30,6 @@ body {
     height: 550px;
   }
 }
-
 .title {
   background-color: rgba(9, 157, 141, 0.9);
   color: #fff;
@@ -60,7 +58,6 @@ body {
     text-align: left;
   }
 }
-
 .nav-menu {
   list-style: none;
   background-color: rgba(20, 217, 196, 0.9);
@@ -86,7 +83,6 @@ body {
     justify-content: flex-end;
   }
 }
-
 .nav-link {
   color: #fff;
   font-family: 'Rubik', sans-serif;
@@ -101,7 +97,6 @@ body {
     padding-left: 20px;
   }
 }
-
 .container {
   position: relative;
 }
@@ -123,13 +118,11 @@ body {
     margin-left: 50px;
   }
 }
-
 @media all and (min-width: 1200px) {
   .claim-box {
     top: 429px;
   }
 }
-
 .claim {
   color: #000;
   font-family: 'Open Sans', sans-serif;
@@ -144,13 +137,16 @@ body {
     font-size: 24px;
   }
 }
-
 /* FIRST MAIN */
-
 .contenedor {
   margin-top: 70px;
 }
 
+@media all and (min-width: 768px) {
+  .contenedor {
+    margin-top: 85px;
+  }
+}
 .contendor-equipo {
   display: block;
   width: 320px;
@@ -158,27 +154,63 @@ body {
   margin-bottom: 30px;
 }
 
+@media all and (min-width: 768px) {
+  .contenedor-equipo {
+    margin-bottom: 60px;
+  }
+}
 .contenedor-fortalezas {
   padding-top: 30px;
 }
 
+/*
+@media all and (min-width:768px) {
+.contendor-fortalezas {
+margin-top: 45px;
+}
+}
+*/
+@media all and (min-width: 768px) {
+  .contenedor-fortalezas {
+    width: 50%;
+    margin-top: 15px;
+    margin-right: 15px;
+    /*margin-bottom: 60px;??*/
+  }
+}
 .contendor-debilidades {
   padding-bottom: 45px;
 }
 
+@media all and (min-width: 768px) {
+  .contenedor-debilidades {
+    width: 50%;
+    margin-left: 15px;
+    margin-top: 45px;
+  }
+}
 .fortalezas-y-debilidades {
   background-color: #f1f1f1;
 }
 
+@media all and (min-width: 768px) {
+  .fortalezas-y-debilidades {
+    margin-top: 45px;
+    /*margin-bottom: 60px;*/
+    display: flex;
+    flex-direction: column;
+  }
+}
 .verde {
-  color: #099d8d;
-  font-family: 'Rubik', sans-serif, '400';
+  color: #099D8D;
+  font-family: 'Rubik', sans-serif,'400';
   font-size: 24px;
+  line: 45px;
   text-align: center;
 }
 
 .parrafo {
-  color: #54585a;
+  color: #54585A;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -188,6 +220,12 @@ body {
   padding-bottom: 30px;
 }
 
+/*revisar parrafo*/
+@media all and (min-width: 768px) {
+  .parrafo {
+    margin-bottom: 60px;
+  }
+}
 .subtitulo {
   font-size: 22px;
 }
@@ -204,7 +242,6 @@ body {
 }
 
 /* SECOND MAIN */
-
 .quienes_somos {
   margin: 0;
   padding: 0;
@@ -255,7 +292,7 @@ p {
   justify-content: center;
 }
 
-.redes-sociales .link a{
+.redes-sociales .link a {
   color: #099d8d;
 }
 
@@ -273,8 +310,6 @@ p {
   content: none;
 }
 
-//*******************FOOTER*********************//
-
 .footer {
   text-align: center;
 }
@@ -284,7 +319,6 @@ p {
     position: relative;
   }
 }
-
 .enmedio {
   border-top-style: solid;
   border-color: grey;
@@ -302,7 +336,6 @@ p {
     position: absolute;
   }
 }
-
 .nav-footer {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -322,7 +355,6 @@ p {
     margin-top: 25px;
   }
 }
-
 .link-nav-footer a {
   text-decoration: none;
   color: #54585A;
@@ -343,14 +375,10 @@ p {
     margin: 70px;
   }
 }
-
 .no-decoracion-enlace {
   text-decoration: none;
   color: #fff;
 }
-
-
-
 
 /*************CSS CONTACTO****************/
 /*************CSS CONTACTO****************/
@@ -418,3 +446,5 @@ p {
   border-radius: 3px;
   margin: 30px 0 60px 0;
 }
+
+/*# sourceMappingURL=main.css.map */
