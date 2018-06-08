@@ -142,6 +142,11 @@ body {
   margin-top: 70px;
 }
 
+@media all and (min-width: 768px) {
+  .contenedor {
+    margin-top: 85px;
+  }
+}
 .contendor-equipo {
   display: block;
   width: 320px;
@@ -149,27 +154,63 @@ body {
   margin-bottom: 30px;
 }
 
+@media all and (min-width: 768px) {
+  .contenedor-equipo {
+    margin-bottom: 60px;
+  }
+}
 .contenedor-fortalezas {
   padding-top: 30px;
 }
 
+/*
+@media all and (min-width:768px) {
+.contendor-fortalezas {
+margin-top: 45px;
+}
+}
+*/
+@media all and (min-width: 768px) {
+  .contenedor-fortalezas {
+    width: 50%;
+    margin-top: 15px;
+    margin-right: 15px;
+    /*margin-bottom: 60px;??*/
+  }
+}
 .contendor-debilidades {
   padding-bottom: 45px;
 }
 
+@media all and (min-width: 768px) {
+  .contenedor-debilidades {
+    width: 50%;
+    margin-left: 15px;
+    margin-top: 45px;
+  }
+}
 .fortalezas-y-debilidades {
   background-color: #f1f1f1;
 }
 
+@media all and (min-width: 768px) {
+  .fortalezas-y-debilidades {
+    margin-top: 45px;
+    /*margin-bottom: 60px;*/
+    display: flex;
+    flex-direction: column;
+  }
+}
 .verde {
-  color: #099d8d;
-  font-family: 'Rubik', sans-serif, '400';
+  color: #099D8D;
+  font-family: 'Rubik', sans-serif,'400';
   font-size: 24px;
+  line: 45px;
   text-align: center;
 }
 
 .parrafo {
-  color: #54585a;
+  color: #54585A;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -179,6 +220,12 @@ body {
   padding-bottom: 30px;
 }
 
+/*revisar parrafo*/
+@media all and (min-width: 768px) {
+  .parrafo {
+    margin-bottom: 60px;
+  }
+}
 .subtitulo {
   font-size: 22px;
 }
@@ -237,21 +284,30 @@ p {
   color: #54585a;
 }
 
-.fab .fas {
-  color: #099d8d;
-}
-
 .redes-sociales {
   display: flex;
+  position: relative;
   list-style: none;
   padding: 0;
   justify-content: center;
 }
 
-.redes-sociales li {
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
+.redes-sociales .link a {
+  color: #099d8d;
+}
+
+.redes-sociales .link::before {
+  display: inline-block;
+  margin: 5px 10px;
+  width: 3px;
+  height: 3px;
+  background-color: #499d8d;
+  border-radius: 10px;
+  content: '';
+}
+
+.redes-sociales .link:first-child::before {
+  content: none;
 }
 
 .footer {
