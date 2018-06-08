@@ -1,0 +1,394 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* HERO SECTION */
+.imagen-principal {
+  background: url("../images/cabecera.jpg") no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 421px;
+  position: relative;
+}
+
+@media all and (min-width: 1200px) {
+  .imagen-principal {
+    height: 550px;
+  }
+}
+.title {
+  background-color: rgba(9, 157, 141, 0.9);
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+  display: inline-block;
+  z-index: 10;
+  position: fixed;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    width: 100%;
+    background-color: rgba(9, 157, 141, 0.9);
+  }
+
+  .title {
+    width: 50%;
+    padding-left: 45px;
+    text-align: left;
+  }
+}
+.nav-menu {
+  list-style: none;
+  background-color: rgba(20, 217, 196, 0.9);
+  height: 45px;
+  width: 100%;
+  top: 60px;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+@media all and (min-width: 768px) {
+  .nav-menu {
+    background-color: rgba(9, 157, 141, 0.9);
+    height: 60px;
+    top: 0;
+    width: 50%;
+    margin-left: 50%;
+    padding-right: 45px;
+    justify-content: flex-end;
+  }
+}
+.nav-link {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+  .nav-link {
+    padding-left: 20px;
+  }
+}
+.container {
+  position: relative;
+}
+
+.claim-box {
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px;
+  top: 360px;
+  position: absolute;
+}
+
+@media all and (min-width: 768px) {
+  .claim-box {
+    background-color: #ffffff90;
+    top: 300px;
+    width: 441px;
+    padding: 15px 30px 15px 30px;
+    margin-left: 50px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .claim-box {
+    top: 429px;
+  }
+}
+.claim {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+@media all and (min-width: 1200px) {
+  .claim {
+    font-size: 24px;
+  }
+}
+/* FIRST MAIN */
+.contenedor {
+  margin-top: 70px;
+}
+
+.contendor-equipo {
+  display: block;
+  width: 320px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contenedor-fortalezas {
+  padding-top: 30px;
+}
+
+.contendor-debilidades {
+  padding-bottom: 45px;
+}
+
+.fortalezas-y-debilidades {
+  background-color: #f1f1f1;
+}
+
+.verde {
+  color: #099d8d;
+  font-family: 'Rubik', sans-serif, '400';
+  font-size: 24px;
+  text-align: center;
+}
+
+.parrafo {
+  color: #54585a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 30px;
+}
+
+.subtitulo {
+  font-size: 22px;
+}
+
+.triangulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid white;
+  border-left: 15px solid #F1F1F1;
+  border-right: 15px solid #F1F1F1;
+}
+
+/* SECOND MAIN */
+.quienes_somos {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+}
+
+.titulo {
+  color: #099d8d;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contenedor-biografia {
+  text-align: center;
+  margin-bottom: 45px;
+  padding: 0 15px 0 15px;
+  width: 100%;
+}
+
+.contenedor-biografia h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.foto {
+  margin-bottom: 15px;
+  border: 4px solid #b8b8b9;
+  border-radius: 5%;
+}
+
+p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: lighter;
+  color: #54585a;
+}
+
+.fab .fas {
+  color: #099d8d;
+}
+
+.redes-sociales {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.redes-sociales li {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    position: relative;
+  }
+}
+.enmedio {
+  border-top-style: solid;
+  border-color: grey;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #b8b8b9;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+@media all and (min-width: 768px) {
+  .enmedio {
+    position: absolute;
+  }
+}
+.nav-footer {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  list-style-type: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+}
+.link-nav-footer a {
+  text-decoration: none;
+  color: #54585A;
+}
+
+.imagen-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .imagen-footer {
+    display: flex;
+    align-items: flex-start;
+    margin: 70px;
+  }
+}
+.no-decoracion-enlace {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*************CSS CONTACTO****************/
+/*************CSS CONTACTO****************/
+.contenedor-form {
+  font-family: 'Open Sans', sans-serif;
+  color: #54585A;
+}
+
+.contacto {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 70px;
+  flex-direction: column;
+}
+
+.titulo-contacto {
+  margin: 30px auto 15px auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #499d8d;
+}
+
+.recomendacion {
+  margin-top: 45px;
+  color: #54585A;
+  font-size: 12px;
+}
+
+.asterisco {
+  color: #00ffda;
+}
+
+.form {
+  width: 100%;
+  padding: 0 15px;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.form input {
+  width: 100%;
+}
+
+.seccion {
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.textarea {
+  width: 100%;
+  height: 105px;
+  border: 1px solid #999;
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #499d8d;
+  border-style: none;
+  border-radius: 3px;
+  margin: 30px 0 60px 0;
+}
+
+/*# sourceMappingURL=main.css.map */
