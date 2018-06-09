@@ -13,6 +13,13 @@ body {
   width: 100%;
   background-color: #fff;
 }
+@media all and (min-width: 1200px) {
+  body {
+    width: 924px;
+margin: 0 auto;
+  }
+}
+
 
 /* HERO SECTION */
 
@@ -245,8 +252,8 @@ body {
   width: 0;
   height: 0;
   border-top: 15px solid white;
-  border-left: 15px solid #F1F1F1;
-  border-right: 15px solid #F1F1F1;
+  border-left: 15px solid #f1f1f1;
+  border-right: 15px solid #f1f1f1;
 }
 
 /* SECOND MAIN */
@@ -323,12 +330,22 @@ p {
 
 .footer {
   text-align: center;
+  border-top: 2px solid grey;
 }
 
 @media all and (min-width: 768px) {
   .footer {
-    border-top: 2px solid grey;
     position: relative;
+    border: 0 solid grey;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .raya {
+    border-top: 2px solid lightgrey;
+    width: 100vh;
+
+    /* Pregunta para Nasi... si tengo un div a 100vh porque no me lo pinta? */
   }
 }
 
@@ -377,7 +394,7 @@ p {
 
 .link-nav-footer a {
   text-decoration: none;
-  color: #54585A;
+  color: #54585a;
 }
 
 //*****duda para Nasi..xk el div imagen footer no se adapta a la medida del img****//
