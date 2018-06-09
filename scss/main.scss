@@ -336,8 +336,10 @@ p {
   text-align: center;
 }
 
+
 @media all and (min-width: 768px) {
   .footer {
+    border-top: 2px solid grey;
     position: relative;
   }
 }
@@ -355,6 +357,7 @@ p {
 @media all and (min-width: 768px) {
   .enmedio {
     position: absolute;
+    margin-bottom: 15px;
   }
 }
 
@@ -374,19 +377,24 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 25px;
-
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 60px;
   }
 }
 
+.nav-footer li {
+margin-top: 20px;
+}
 .link-nav-footer a {
   text-decoration: none;
   color: #54585A;
 }
 
+//*****duda para Nasi..xk el div imagen footer no se adapta a la medida del img****//
+
 .imagen-footer {
   display: flex;
-  justify-content: center;
   margin-bottom: 45px;
   margin-top: 30px;
 }
@@ -395,7 +403,8 @@ p {
   .imagen-footer {
     margin: 0;
     padding: 0;
-    align-items: flex-start;
+    position: absolute;
+    bottom: 60px;
   }
 }
 
