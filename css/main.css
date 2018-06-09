@@ -308,6 +308,8 @@ p {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   border-top: 2px solid grey;
 }
@@ -339,6 +341,7 @@ p {
   .enmedio {
     position: absolute;
     margin-bottom: 15px;
+    margin-left: 15px;
   }
 }
 .nav-footer {
@@ -346,7 +349,8 @@ p {
   font-family: 'Open Sans', sans-serif;
   list-style-type: none;
   text-transform: uppercase;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -366,13 +370,24 @@ p {
   margin-top: 20px;
 }
 
+@media all and (min-width: 768px) {
+  .nav-footer li {
+    margin-right: 15px;
+  }
+}
 .link-nav-footer a {
   text-decoration: none;
   color: #54585a;
 }
 
+/* si utilizo un wraper envolviendo el contenido del body xk no me coje les medidas 924px */
+* {
+  border: 2px solid black;
+}
+
 .imagen-footer {
   display: flex;
+  justify-content: center;
   margin-bottom: 45px;
   margin-top: 30px;
 }
@@ -381,6 +396,7 @@ p {
   .imagen-footer {
     margin: 0;
     padding: 0;
+    margin-left: 15px;
     position: absolute;
     bottom: 60px;
   }
