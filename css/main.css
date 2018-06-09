@@ -166,7 +166,6 @@ body {
 @media all and (min-width: 768px) {
   .fortalezas-y-debilidades {
     margin-top: 45px;
-    /*margin-bottom: 60px;*/
     display: flex;
     flex-direction: column;
   }
@@ -175,19 +174,12 @@ body {
   padding-top: 30px;
 }
 
-/*
-@media all and (min-width:768px) {
-.contendor-fortalezas {
-margin-top: 45px;
-}
-}
-*/
 @media all and (min-width: 768px) {
   .contenedor-fortalezas {
     width: 50%;
     margin-top: 15px;
     margin-right: 15px;
-    /*margin-bottom: 60px;??*/
+    /* margin-bottom: 60px;?? */
   }
 }
 .contendor-debilidades {
@@ -202,15 +194,14 @@ margin-top: 45px;
   }
 }
 .verde {
-  color: #099D8D;
-  font-family: 'Rubik', sans-serif,'400';
+  color: #099d8d;
+  font-family: 'Rubik', sans-serif, '400';
   font-size: 24px;
-  line: 45px;
   text-align: center;
 }
 
 .parrafo {
-  color: #54585A;
+  color: #54585a;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -220,7 +211,7 @@ margin-top: 45px;
   padding-bottom: 30px;
 }
 
-/*revisar parrafo*/
+/* revisar parrafo */
 @media all and (min-width: 768px) {
   .parrafo {
     margin-bottom: 60px;
@@ -380,15 +371,10 @@ p {
     bottom: 60px;
   }
 }
-.no-decoracion-enlace {
-  text-decoration: none;
-  color: #fff;
-}
-
-/*************CSS CONTACTO****************/
+/* ************CSS CONTACTO*************** */
 .contenedor-form {
   font-family: 'Open Sans', sans-serif;
-  color: #54585A;
+  color: #54585a;
 }
 
 .contacto {
@@ -408,7 +394,7 @@ p {
 
 .recomendacion {
   margin-top: 45px;
-  color: #54585A;
+  color: #54585a;
   font-size: 12px;
 }
 
