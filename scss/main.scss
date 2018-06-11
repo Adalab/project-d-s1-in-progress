@@ -175,11 +175,11 @@ margin-bottom: 60px;
 }
 
 @media all and (min-width:768px) {
-.fortalezas-y-debilidades {
-margin-top: 45px;
-/*margin-bottom: 60px;*/
-display: flex;
-flex-direction: column;
+  .fortalezas-y-debilidades {
+    margin-top: 45px;
+    /*margin-bottom: 60px;*/
+    display: flex;
+    flex-direction: row;
   }
 }
 
