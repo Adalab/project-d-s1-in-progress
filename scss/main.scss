@@ -179,7 +179,7 @@ body {
 
 @media all and (min-width: 768px) {
   .contenedor {
-    margin-top: 85px;
+    margin-top: 45px;
   }
 }
 
@@ -200,11 +200,11 @@ body {
   background-color: #f1f1f1;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width:768px) {
   .fortalezas-y-debilidades {
-    margin-top: 45px;
+    margin-bottom: 60px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -217,8 +217,6 @@ body {
     width: 50%;
     margin-top: 15px;
     margin-right: 15px;
-
-    /* margin-bottom: 60px;?? */
   }
 }
 
@@ -256,8 +254,18 @@ body {
 
 @media all and (min-width: 768px) {
   .parrafo {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
+}
+
+.parrafo-1 {
+  color: #54585a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .subtitulo {
