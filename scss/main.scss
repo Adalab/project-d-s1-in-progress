@@ -14,13 +14,6 @@ body {
   background-color: #fff;
 }
 
-@media all and (min-width: 1200px) {
-  body {
-    width: 924px;
-    margin: 0 auto;
-  }
-}
-
 /* HERO SECTION */
 
 .imagen-principal {
@@ -355,7 +348,6 @@ p {
   display: flex;
   flex-direction: column;
   list-style: none;
-
 }
 
 .nav-footer li {
@@ -377,7 +369,6 @@ p {
   margin-bottom: 45px;
   margin-top: 30px;
 }
-
 
 /* ************CSS FORMULARIO CONTACTO*************** */
 
@@ -451,10 +442,11 @@ p {
   margin: 30px 0 60px 0;
 }
 
-/* MEDIA QUERY FOOTER */
+////////////////////* MEDIA QUERY FOOTER *///////////////////
 
 @media all and (min-width: 768px) {
   .footer {
+    width: 100%;
     position: relative;
     border: 0 solid grey;
   }
@@ -482,7 +474,7 @@ p {
     bottom: 60px;
   }
 
-  /* Media del formulario de contacto */
+  //////////////////* Media del formulario de contacto *///////////////
 
   .contacto {
     width: 442px;
@@ -499,8 +491,21 @@ p {
   }
 }
 
+/////////////* MEDIAQUERIES FOOTER 1200 *//////////////////
+
 @media all and (min-width: 1200px) {
-  .navigator {
+  .footer {
     width: 924px;
+    margin: 0 auto;
+  }
+
+  .navigator {
+    border: none;
+  }
+
+  .raya {
+    border: 1px solid lightgrey;
+    width: 100vw;
+    margin-right: 10px;
   }
 }
