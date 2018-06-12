@@ -45,10 +45,37 @@ body {
   z-index: 10;
   display: flex;
   flex-direction: column;
+  background-color: rgba(9, 157, 141, 0.9);
 }
 
+@media all and (min-width: 768px) {
+  .header {
+    height: 60px;
+  }
+
+  .box-header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+@media all and (min-width: 1200px) {
+  .header {
+    width: 100vw;
+    background-color: rgba(9, 157, 141, 0.9);
+  }
+
+  .box-header {
+    max-width: 924px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .title {
-  background-color: rgba(9, 157, 141, 0.9);
   color: #fff;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -61,25 +88,18 @@ body {
   display: inline-block;
 }
 
-.title-link {
-  text-decoration: none;
-  color: #fff;
-}
-
 @media all and (min-width: 768px) {
-  .header {
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    flex-flow: row nowrap;
-  }
-
   .title {
     width: 50vw;
     padding-left: 45px;
     text-align: left;
   }
 }
+.title-link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .nav-menu {
   list-style: none;
   background-color: rgba(20, 217, 196, 0.9);
@@ -94,11 +114,16 @@ body {
 
 @media all and (min-width: 768px) {
   .nav-menu {
-    background-color: rgba(9, 157, 141, 0.9);
+    background-color: rgba(9, 157, 141, 0);
     height: 60px;
     top: 0;
     width: 50vw;
     padding-right: 45px;
+    justify-content: flex-end;
+  }
+}
+@media all and (min-width: 1200px) {
+  .nav-menu {
     justify-content: flex-end;
   }
 }
@@ -131,15 +156,23 @@ body {
 @media all and (min-width: 768px) {
   .claim-box {
     background-color: #ffffff90;
-    top: 300px;
+    top: 326px;
     width: 441px;
     padding: 15px 30px 15px 30px;
     margin-left: 50px;
   }
 }
 @media all and (min-width: 1200px) {
+  .container-claim-box {
+    max-width: 924px;
+    height: 550px;
+    margin: auto;
+    position: relative;
+  }
+
   .claim-box {
-    top: 429px;
+    top: 455px;
+    position: absolute;
   }
 }
 .claim {
