@@ -15,8 +15,8 @@ body {
 }
 
 @media all and (min-width: 1200px) {
-  body {
-    width: 924px;
+  .wrapper {
+    max-width: 924px;
     margin: 0 auto;
   }
 }
@@ -34,8 +34,19 @@ body {
 @media all and (min-width: 1200px) {
   .imagen-principal {
     height: 550px;
+    width: 100vw;
+    margin: auto;
   }
 }
+.header {
+  position: fixed;
+  height: 105px;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   background-color: rgba(9, 157, 141, 0.9);
   color: #fff;
@@ -48,23 +59,23 @@ body {
   width: 100%;
   padding: 20px;
   display: inline-block;
-  z-index: 10;
-  position: fixed;
 }
 
-.title a {
+.title-link {
   text-decoration: none;
   color: #fff;
 }
 
 @media all and (min-width: 768px) {
   .header {
-    width: 100%;
-    background-color: rgba(9, 157, 141, 0.9);
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
   }
 
   .title {
-    width: 50%;
+    width: 50vw;
     padding-left: 45px;
     text-align: left;
   }
@@ -75,8 +86,6 @@ body {
   height: 45px;
   width: 100%;
   top: 60px;
-  z-index: 10;
-  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -88,8 +97,7 @@ body {
     background-color: rgba(9, 157, 141, 0.9);
     height: 60px;
     top: 0;
-    width: 50%;
-    margin-left: 50%;
+    width: 50vw;
     padding-right: 45px;
     justify-content: flex-end;
   }
@@ -155,7 +163,7 @@ body {
 
 @media all and (min-width: 768px) {
   .contenedor {
-    margin-top: 85px;
+    margin-top: 45px;
   }
 }
 .contendor-equipo {
@@ -176,8 +184,7 @@ body {
 
 @media all and (min-width: 768px) {
   .fortalezas-y-debilidades {
-    margin-top: 45px;
-    /*margin-bottom: 60px;*/
+    margin-bottom: 60px;
     display: flex;
     flex-direction: row;
   }
@@ -191,7 +198,6 @@ body {
     width: 50%;
     margin-top: 15px;
     margin-right: 15px;
-    /* margin-bottom: 60px;?? */
   }
 }
 .contendor-debilidades {
@@ -226,9 +232,19 @@ body {
 /* revisar parrafo */
 @media all and (min-width: 768px) {
   .parrafo {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
+.parrafo-1 {
+  color: #54585a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .subtitulo {
   font-size: 22px;
 }
@@ -390,9 +406,14 @@ body {
   margin-top: 20px;
 }
 
-.link-nav-footer a {
+.footer-link {
   text-decoration: none;
   color: #54585a;
+  transition: color ease 0.3s;
+}
+.footer-link:hover {
+  color: #3cdbc0;
+  text-decoration: underline;
 }
 
 /* si utilizo un wraper envolviendo el contenido del body xk no me coje les medidas 100vh para hacer la linea gris? */
@@ -474,9 +495,9 @@ body {
   margin: 30px 0 60px 0;
 }
 
-/* MEDIA QUERY FOOTER */
 @media all and (min-width: 768px) {
   .footer {
+    width: 100%;
     position: relative;
     border: 0 solid grey;
   }
@@ -504,7 +525,6 @@ body {
     bottom: 60px;
   }
 
-  /* Media del formulario de contacto */
   .contacto {
     width: 442px;
   }
@@ -520,8 +540,19 @@ body {
   }
 }
 @media all and (min-width: 1200px) {
-  .navigator {
+  .footer {
     width: 924px;
+    margin: 0 auto;
+  }
+
+  .navigator {
+    border: none;
+  }
+
+  .raya {
+    border: 1px solid lightgrey;
+    width: 100vw;
+    margin-right: 10px;
   }
 }
 
