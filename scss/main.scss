@@ -14,7 +14,6 @@ body {
   background-color: #fff;
 }
 
-<<<<<<< HEAD
 @media all and (min-width: 1200px) {
   .wrapper {
     max-width: 924px;
@@ -22,8 +21,6 @@ body {
   }
 }
 
-=======
->>>>>>> 08fb6be0733301cf4c66acf6435502695ba494e4
 /* HERO SECTION */
 
 .imagen-principal {
@@ -84,12 +81,6 @@ body {
     width: 50vw;
     padding-left: 45px;
     text-align: left;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .header {
-  
   }
 }
 
@@ -203,7 +194,7 @@ body {
   background-color: #f1f1f1;
 }
 
-@media all and (min-width:768px) {
+@media all and (min-width: 768px) {
   .fortalezas-y-debilidades {
     margin-bottom: 60px;
     display: flex;
@@ -338,7 +329,7 @@ p {
   justify-content: center;
 }
 
-.redes-sociales .link a{
+.redes-sociales .link a {
   color: #099d8d;
 }
 
@@ -522,8 +513,6 @@ p {
     border-top: 1px solid lightgrey;
   }
 }
-<<<<<<< HEAD
-=======
 
 /////////////* MEDIAQUERIES FOOTER 1200 *//////////////////
 
@@ -543,4 +532,3 @@ p {
     margin-right: 10px;
   }
 }
->>>>>>> 08fb6be0733301cf4c66acf6435502695ba494e4
