@@ -13,8 +13,8 @@ body {
   background-color: #fff; }
 
 @media all and (min-width: 1200px) {
-  body {
-    width: 924px;
+  .wrapper {
+    max-width: 924px;
     margin: 0 auto; } }
 /* HERO SECTION */
 .imagen-principal {
@@ -28,7 +28,17 @@ body {
 
 @media all and (min-width: 1200px) {
   .imagen-principal {
-    height: 550px; } }
+    height: 550px;
+    width: 100vw;
+    margin: auto; } }
+.header {
+  position: fixed;
+  height: 105px;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column; }
+
 .title {
   background-color: rgba(9, 157, 141, 0.9);
   color: #fff;
@@ -40,21 +50,21 @@ body {
   height: 60px;
   width: 100%;
   padding: 20px;
-  display: inline-block;
-  z-index: 10;
-  position: fixed; }
+  display: inline-block; }
 
-.title a {
+.title-link {
   text-decoration: none;
   color: #fff; }
 
 @media all and (min-width: 768px) {
   .header {
-    width: 100%;
-    background-color: rgba(9, 157, 141, 0.9); }
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap; }
 
   .title {
-    width: 50%;
+    width: 50vw;
     padding-left: 45px;
     text-align: left; } }
 .nav-menu {
@@ -63,8 +73,6 @@ body {
   height: 45px;
   width: 100%;
   top: 60px;
-  z-index: 10;
-  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -75,8 +83,7 @@ body {
     background-color: rgba(9, 157, 141, 0.9);
     height: 60px;
     top: 0;
-    width: 50%;
-    margin-left: 50%;
+    width: 50vw;
     padding-right: 45px;
     justify-content: flex-end; } }
 .nav-link {
@@ -209,10 +216,9 @@ body {
   border-right: 15px solid #f1f1f1; }
 
 /* SECOND MAIN */
-.quienes_somos {
+.quienes-somos {
   margin: 0;
-  padding: 0;
-  border: 2px solid black; }
+  padding: 0; }
 
 .titulo {
   color: #099d8d;
@@ -223,13 +229,13 @@ body {
   margin-top: 30px;
   margin-bottom: 30px; }
 
-.contenedor-biografia {
+.contenedor-bio {
   text-align: center;
   margin-bottom: 45px;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
   width: 100%; }
 
-.contenedor-biografia h4 {
+.contenedor-bio h4 {
   color: #000;
   font-size: 20px;
   font-weight: normal; }
@@ -237,9 +243,11 @@ body {
 .foto {
   margin-bottom: 15px;
   border: 4px solid #b8b8b9;
-  border-radius: 5%; }
+  border-radius: 5%;
+  width: 180px;
+  height: 180px; }
 
-p {
+.bio {
   margin-bottom: 15px;
   margin-top: 15px;
   font-weight: lighter;
@@ -267,6 +275,43 @@ p {
 .redes-sociales .link:first-child::before {
   content: none; }
 
+@media all and (min-width: 768px) {
+  .quienes-somos .titulo {
+    margin-bottom: 45px; }
+
+  .quienes-somos {
+    padding-left: 45px;
+    padding-right: 45px; }
+
+  .contenedor-bio {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 60px; }
+
+  .subcontenedor-bio {
+    margin-top: 20px; }
+
+  .redes-sociales {
+    justify-content: flex-start; }
+
+  .contenedor-bio:nth-child(odd) .subcontenedor-bio .redes-sociales {
+    justify-content: flex-end; }
+
+  .foto {
+    width: 205px;
+    height: 205px; }
+
+  .contenedor-bio:nth-child(even) .subcontenedor-bio {
+    margin-left: 30px; }
+
+  .contenedor-bio:nth-child(odd) .subcontenedor-bio {
+    margin-right: 30px; }
+
+  .contenedor-bio:nth-child(odd) {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: right; } }
 .footer {
   display: flex;
   flex-direction: column;
@@ -291,9 +336,13 @@ p {
 .nav-footer li {
   margin-top: 20px; }
 
-.link-nav-footer a {
+.footer-link {
   text-decoration: none;
-  color: #54585a; }
+  color: #54585a;
+  transition: color ease 0.3s; }
+  .footer-link:hover {
+    color: #3cdbc0;
+    text-decoration: underline; }
 
 /* si utilizo un wraper envolviendo el contenido del body xk no me coje les medidas 100vh para hacer la linea gris? */
 .imagen-footer {
@@ -362,9 +411,9 @@ p {
   border-radius: 3px;
   margin: 30px 0 60px 0; }
 
-/* MEDIA QUERY FOOTER */
 @media all and (min-width: 768px) {
   .footer {
+    width: 100%;
     position: relative;
     border: 0 solid grey; }
 
@@ -388,7 +437,6 @@ p {
     position: absolute;
     bottom: 60px; }
 
-  /* Media del formulario de contacto */
   .contacto {
     width: 442px; }
 
@@ -400,7 +448,16 @@ p {
   .navigator {
     border-top: 1px solid lightgrey; } }
 @media all and (min-width: 1200px) {
+  .footer {
+    width: 924px;
+    margin: 0 auto; }
+
   .navigator {
-    width: 924px; } }
+    border: none; }
+
+  .raya {
+    border: 1px solid lightgrey;
+    width: 100vw;
+    margin-right: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
