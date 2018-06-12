@@ -377,9 +377,15 @@ p {
   margin-top: 20px;
 }
 
-.link-nav-footer a {
+.footer-link {
   text-decoration: none;
   color: #54585a;
+  transition: color ease 0.3s;
+
+  &:hover {
+    color: #3cdbc0;
+    text-decoration: underline;
+  }
 }
 
 /* si utilizo un wraper envolviendo el contenido del body xk no me coje les medidas 100vh para hacer la linea gris? */
