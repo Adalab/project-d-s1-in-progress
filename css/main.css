@@ -278,6 +278,13 @@ body {
   margin-right: 15px;
 }
 
+/*revisar! pq no funciona*/
+@media all and (min-width: 1200px) {
+  .parrafo-1 {
+    text-align: center;
+    width: 601px;
+  }
+}
 .subtitulo {
   font-size: 22px;
 }
