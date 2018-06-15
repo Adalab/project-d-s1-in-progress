@@ -272,8 +272,8 @@ body {
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .contenedor-bio {
@@ -333,6 +333,7 @@ body {
 @media all and (min-width: 768px) {
   .quienes-somos .titulo {
     margin-bottom: 45px;
+    margin-top: 0;
   }
 
   .quienes-somos {
@@ -345,6 +346,11 @@ body {
     text-align: left;
     padding: 0;
     margin-bottom: 60px;
+  }
+
+  .contenedor-bio:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right;
   }
 
   .subcontenedor-bio {
@@ -371,11 +377,23 @@ body {
   .contenedor-bio:nth-child(odd) .subcontenedor-bio {
     margin-right: 30px;
   }
+}
+@media all and (min-width: 1200px) {
+  .foto {
+    width: 278px;
+    height: 278px;
+  }
 
-  .contenedor-bio:nth-child(odd) {
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    text-align: right;
+  .bio {
+    width: 439px;
+  }
+
+  .contenedor-bio:nth-child(even) .subcontenedor-bio {
+    margin-left: 45px;
+  }
+
+  .contenedor-bio:nth-child(odd) .subcontenedor-bio {
+    margin-right: 45px;
   }
 }
 .footer {
