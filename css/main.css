@@ -1,38 +1,492 @@
-/*
-Error: Invalid CSS after "...'layout/footer'": expected "{", was ";"
-        on line 2 of /home/adalaber/proyectos-grupales/proyecto-grupal-1/d-s1-in-progress/scss/main.scss
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal; }
 
-1: <<<<<<< HEAD
-2: @import 'layout/footer';
-3: 
-4: * {
-5:   box-sizing: border-box;
-6:   margin: 0;
-7:   padding: 0;
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  overflow-x: hidden; }
 
-Backtrace:
-/home/adalaber/proyectos-grupales/proyecto-grupal-1/d-s1-in-progress/scss/main.scss:2
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/usr/share/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/usr/share/koala/bin/sass:22:in `load'
-/usr/share/koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...'layout/footer'\": expected \"{\", was \";\"\A         on line 2 of /home/adalaber/proyectos-grupales/proyecto-grupal-1/d-s1-in-progress/scss/main.scss\A \A 1: <<<<<<< HEAD\A 2: @import 'layout/footer';\A 3: \A 4: * {\A 5:   box-sizing: border-box;\A 6:   margin: 0;\A 7:   padding: 0;"; }
+@media all and (min-width: 1200px) {
+  .wrapper {
+    max-width: 924px;
+    margin: 0 auto; } }
+.contenedor-form {
+  font-family: 'Open Sans', sans-serif;
+  color: #54585a; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 70px; }
+
+.titulo-contacto {
+  margin: 30px auto 15px auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #499d8d; }
+
+.texto-contacto {
+  margin: 0 30px; }
+
+.recomendacion {
+  margin-top: 45px;
+  color: #54585a;
+  font-size: 12px; }
+
+.asterisco {
+  color: #00ffda; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  margin-top: 60px;
+  text-align: left; }
+
+.form input {
+  width: 100%; }
+
+.seccion {
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 14px; }
+
+.textarea {
+  width: 100%;
+  height: 105px;
+  border: 1px solid #999; }
+
+.button {
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #499d8d;
+  border-style: none;
+  border-radius: 3px;
+  margin: 30px 0 60px 0; }
+
+.container {
+  position: relative; }
+
+.imagen-principal {
+  background: url("../images/cabecera.jpg") no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 421px;
+  position: relative; }
+
+@media all and (min-width: 1200px) {
+  .imagen-principal {
+    height: 550px;
+    width: 100vw;
+    margin: auto; } }
+.claim-box {
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px;
+  top: 360px;
+  position: absolute; }
+
+@media all and (min-width: 768px) {
+  .claim-box {
+    background-color: #ffffff90;
+    top: 326px;
+    width: 441px;
+    padding: 15px 30px 15px 30px;
+    margin-left: 50px; } }
+@media all and (min-width: 1200px) {
+  .container-claim-box {
+    max-width: 924px;
+    height: 550px;
+    margin: auto;
+    position: relative; }
+
+  .claim-box {
+    top: 455px;
+    position: absolute; } }
+.claim {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center; }
+
+@media all and (min-width: 1200px) {
+  .claim {
+    font-size: 24px; } }
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: 1px solid lightgrey; }
+
+.enmedio {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #b8b8b9;
+  padding-top: 30px;
+  margin-bottom: 20px; }
+
+.nav-footer {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  list-style: none; }
+
+.nav-footer li {
+  margin-top: 20px; }
+
+.footer-link {
+  text-decoration: none;
+  color: #54585a;
+  transition: color ease 0.3s; }
+  .footer-link:hover {
+    color: #3cdbc0;
+    text-decoration: underline; }
+
+/* si utilizo un wraper envolviendo el contenido del body xk no me coje les medidas 100vh para hacer la linea gris? */
+.imagen-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+  margin-top: 30px; }
+
+@media all and (min-width: 768px) {
+  .footer {
+    width: 100%;
+    position: relative;
+    border: 0 solid grey; }
+
+  .enmedio {
+    position: absolute;
+    margin-bottom: 15px;
+    margin-left: 30px; }
+
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    margin-right: 30px; }
+
+  .imagen-footer {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 60px; }
+
+  .contacto {
+    width: 442px; }
+
+  .button {
+    width: 206px;
+    height: 45px;
+    align-self: flex-end; }
+
+  .navigator {
+    border-top: 1px solid lightgrey; } }
+@media all and (min-width: 1200px) {
+  .footer {
+    width: 924px;
+    margin: 0 auto; }
+
+  .navigator {
+    border: none; }
+
+  .raya {
+    border: 1px solid lightgrey;
+    width: 100vw;
+    margin-right: 10px; } }
+.header {
+  position: fixed;
+  height: 105px;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(9, 157, 141, 0.9); }
+
+@media all and (min-width: 768px) {
+  .header {
+    height: 60px; }
+
+  .box-header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap; } }
+@media all and (min-width: 1200px) {
+  .header {
+    width: 100vw;
+    background-color: rgba(9, 157, 141, 0.9); }
+
+  .box-header {
+    max-width: 924px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } }
+.title {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+  display: inline-block; }
+
+@media all and (min-width: 768px) {
+  .title {
+    width: 50vw;
+    padding-left: 45px;
+    text-align: left; } }
+@media all and (min-width: 1200px) {
+  .title {
+    max-width: 462px; } }
+.title-link {
+  text-decoration: none;
+  color: #fff; }
+
+.nav-menu {
+  list-style: none;
+  background-color: rgba(20, 217, 196, 0.9);
+  height: 45px;
+  width: 100%;
+  top: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff; }
+
+@media all and (min-width: 768px) {
+  .nav-menu {
+    background-color: rgba(9, 157, 141, 0);
+    height: 60px;
+    top: 0;
+    width: 50vw;
+    padding-right: 45px;
+    justify-content: flex-end; } }
+@media all and (min-width: 1200px) {
+  .nav-menu {
+    max-width: 462px;
+    justify-content: flex-end; } }
+.nav-link {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+@media all and (min-width: 768px) {
+  .nav-link {
+    padding-left: 20px; } }
+/* FIRST MAIN */
+.contenedor {
+  margin-top: 70px; }
+
+@media all and (min-width: 768px) {
+  .contenedor {
+    margin-top: 45px; } }
+.contendor-equipo {
+  display: block;
+  width: 320px;
+  padding-top: 30px;
+  margin-bottom: 30px; }
+
+@media all and (min-width: 768px) {
+  .contenedor-equipo {
+    margin-bottom: 60px; } }
+.parrafo-1 {
+  color: #54585a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px; }
+
+/* revisar! pq no funciona */
+@media all and (min-width: 1200px) {
+  .parrafo-1 {
+    text-align: center;
+    width: 601px;
+    margin: auto; } }
+.fortalezas-y-debilidades {
+  background-color: #f1f1f1; }
+
+@media all and (min-width: 768px) {
+  .fortalezas-y-debilidades {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row; } }
+.contenedor-fortalezas {
+  padding-top: 30px; }
+
+@media all and (min-width: 768px) {
+  .contenedor-fortalezas {
+    width: 50%;
+    margin-top: 15px;
+    margin-right: 15px; } }
+.contendor-debilidades {
+  padding-bottom: 45px; }
+
+@media all and (min-width: 768px) {
+  .contenedor-debilidades {
+    width: 50%;
+    margin-left: 15px;
+    margin-top: 45px; } }
+.verde {
+  color: #099d8d;
+  font-family: 'Rubik', sans-serif, '400';
+  font-size: 24px;
+  text-align: center; }
+
+.parrafo {
+  color: #54585a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 30px; }
+
+/* revisar parrafo */
+@media all and (min-width: 768px) {
+  .parrafo {
+    margin-bottom: 30px; } }
+.subtitulo {
+  font-size: 22px; }
+
+.triangulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid white;
+  border-left: 15px solid #f1f1f1;
+  border-right: 15px solid #f1f1f1; }
+
+/* SECOND MAIN */
+.quienes-somos {
+  margin: 0;
+  padding: 0; }
+
+.titulo {
+  color: #099d8d;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.contenedor-bio {
+  text-align: center;
+  margin-bottom: 45px;
+  padding: 0 15px;
+  width: 100%; }
+
+.contenedor-bio h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: normal; }
+
+.foto {
+  margin-bottom: 15px;
+  border: 4px solid #b8b8b9;
+  border-radius: 5%;
+  width: 180px;
+  height: 180px; }
+
+.bio {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: lighter;
+  color: #54585a; }
+
+.redes-sociales {
+  display: flex;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  justify-content: center; }
+
+.redes-sociales .link a {
+  color: #099d8d; }
+
+.redes-sociales .link::before {
+  display: inline-block;
+  margin: 5px 10px;
+  width: 3px;
+  height: 3px;
+  background-color: #499d8d;
+  border-radius: 10px;
+  content: ''; }
+
+.redes-sociales .link:first-child::before {
+  content: none; }
+
+@media all and (min-width: 768px) {
+  .quienes-somos .titulo {
+    margin-bottom: 45px; }
+
+  .quienes-somos {
+    padding-left: 45px;
+    padding-right: 45px; }
+
+  .contenedor-bio {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 60px; }
+
+  .subcontenedor-bio {
+    margin-top: 20px; }
+
+  .redes-sociales {
+    justify-content: flex-start; }
+
+  .contenedor-bio:nth-child(odd) .subcontenedor-bio .redes-sociales {
+    justify-content: flex-end; }
+
+  .foto {
+    width: 205px;
+    height: 205px; }
+
+  .contenedor-bio:nth-child(even) .subcontenedor-bio {
+    margin-left: 30px; }
+
+  .contenedor-bio:nth-child(odd) .subcontenedor-bio {
+    margin-right: 30px; }
+
+  .contenedor-bio:nth-child(odd) {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: right; } }
+
+/*# sourceMappingURL=main.css.map */
