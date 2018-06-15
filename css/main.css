@@ -95,6 +95,11 @@ body {
     text-align: left;
   }
 }
+@media all and (min-width: 1200px) {
+  .title {
+    max-width: 462px;
+  }
+}
 .title-link {
   text-decoration: none;
   color: #fff;
@@ -124,6 +129,7 @@ body {
 }
 @media all and (min-width: 1200px) {
   .nav-menu {
+    max-width: 462px;
     justify-content: flex-end;
   }
 }
