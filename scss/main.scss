@@ -1,9 +1,8 @@
-// COMPONENTS
-
+// CORE
 @import "core/variables";
 @import "core/general";
 
-// CORE
+// COMPONENTS
 
 @import "components/forms";
 @import "components/hero";
@@ -15,7 +14,6 @@
 @import "layout/grid";
 @import "layout/header";
 // PAGES
-
 
 @import "pages/contact";
 @import "pages/home";

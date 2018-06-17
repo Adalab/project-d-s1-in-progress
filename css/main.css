@@ -393,15 +393,41 @@ body {
     margin-bottom: 60px;
   }
 }
+.parrafo-1 {
+  color: #54585a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media all and (min-width: 1200px) {
+  .parrafo-1 {
+    text-align: center;
+    width: 601px;
+    margin: auto;
+  }
+}
 .fortalezas-y-debilidades {
   background-color: #f1f1f1;
 }
 
 @media all and (min-width: 768px) {
+  .wrapper2 {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .fortalezas-y-debilidades {
     margin-bottom: 60px;
-    display: flex;
-    flex-direction: row;
+  }
+}
+@media all and (min-width: 1200px) {
+  .wrapper2 {
+    width: 924px;
+    margin: auto;
   }
 }
 .contenedor-fortalezas {
@@ -411,8 +437,12 @@ body {
 @media all and (min-width: 768px) {
   .contenedor-fortalezas {
     width: 50%;
-    margin-top: 15px;
-    margin-right: 15px;
+    padding: 45px 15px 60px 30px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .contenedor-fortalezas {
+    padding: 45px 25px 60px 30px;
   }
 }
 .contendor-debilidades {
@@ -422,8 +452,13 @@ body {
 @media all and (min-width: 768px) {
   .contenedor-debilidades {
     width: 50%;
-    margin-left: 15px;
-    margin-top: 45px;
+    padding: 45px 30px 60px 15px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .contenedor-fortalezas {
+    width: 50%;
+    padding: 45px 30px 60px 25px;
   }
 }
 .verde {
@@ -433,6 +468,24 @@ body {
   text-align: center;
 }
 
+.parrafo-2 {
+  color: #54585a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 30px;
+}
+
+@media all and (min-width: 1200px) {
+  .parrafo-2 {
+    text-align: center;
+    width: 601px;
+    margin: auto;
+  }
+}
 .parrafo {
   color: #54585a;
   font-family: 'Open Sans', sans-serif;
@@ -444,29 +497,6 @@ body {
   padding-bottom: 30px;
 }
 
-/* revisar parrafo */
-@media all and (min-width: 768px) {
-  .parrafo {
-    margin-bottom: 30px;
-  }
-}
-.parrafo-1 {
-  color: #54585a;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  padding-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-/* revisar! pq no funciona */
-@media all and (min-width: 1200px) {
-  .parrafo-1 {
-    text-align: center;
-    width: 601px;
-  }
-}
 .subtitulo {
   font-size: 22px;
 }
