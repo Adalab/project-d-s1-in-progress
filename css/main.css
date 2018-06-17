@@ -12,6 +12,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 @media all and (min-width: 1200px) {
@@ -20,7 +21,80 @@ body {
     margin: 0 auto;
   }
 }
-/* HERO SECTION */
+.contenedor-form {
+  font-family: 'Open Sans', sans-serif;
+  color: #54585a;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.titulo-contacto {
+  margin: 30px auto 15px auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #499d8d;
+}
+
+.texto-contacto {
+  margin: 0 30px;
+}
+
+.recomendacion {
+  margin-top: 45px;
+  color: #54585a;
+  font-size: 12px;
+}
+
+.asterisco {
+  color: #00ffda;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.form input {
+  width: 100%;
+}
+
+.seccion {
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.textarea {
+  width: 100%;
+  height: 105px;
+  border: 1px solid #999;
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #499d8d;
+  border-style: none;
+  border-radius: 3px;
+  margin: 30px 0 60px 0;
+}
+
+.container {
+  position: relative;
+}
+
 .imagen-principal {
   background: url("../images/cabecera.jpg") no-repeat left center;
   -webkit-background-size: cover;
@@ -38,6 +112,156 @@ body {
     margin: auto;
   }
 }
+.claim-box {
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px;
+  top: 360px;
+  position: absolute;
+}
+
+@media all and (min-width: 768px) {
+  .claim-box {
+    background-color: #ffffff90;
+    top: 326px;
+    width: 441px;
+    padding: 15px 30px 15px 30px;
+    margin-left: 50px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .container-claim-box {
+    max-width: 924px;
+    height: 550px;
+    margin: auto;
+    position: relative;
+  }
+
+  .claim-box {
+    top: 455px;
+    position: absolute;
+  }
+}
+.claim {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+@media all and (min-width: 1200px) {
+  .claim {
+    font-size: 24px;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: 1px solid lightgrey;
+}
+
+.enmedio {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #b8b8b9;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.nav-footer {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.nav-footer li {
+  margin-top: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #54585a;
+  transition: color ease 0.3s;
+}
+.footer-link:hover {
+  color: #3cdbc0;
+  text-decoration: underline;
+}
+
+/* si utilizo un wraper envolviendo el contenido del body xk no me coje les medidas 100vh para hacer la linea gris? */
+.imagen-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+  margin-top: 30px;
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    width: 100%;
+    position: relative;
+    border: 0 solid grey;
+  }
+
+  .enmedio {
+    position: absolute;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    margin-right: 30px;
+  }
+
+  .imagen-footer {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 60px;
+  }
+
+  .contacto {
+    width: 442px;
+  }
+
+  .button {
+    width: 206px;
+    height: 45px;
+    align-self: flex-end;
+  }
+
+  .navigator {
+    border-top: 1px solid lightgrey;
+  }
+}
+@media all and (min-width: 1200px) {
+  .footer {
+    width: 924px;
+    margin: 0 auto;
+  }
+
+  .navigator {
+    border: none;
+  }
+
+  .raya {
+    border: 1px solid lightgrey;
+    width: 100vw;
+    margin-right: 10px;
+  }
+}
 .header {
   position: fixed;
   height: 105px;
@@ -45,10 +269,37 @@ body {
   z-index: 10;
   display: flex;
   flex-direction: column;
+  background-color: rgba(9, 157, 141, 0.9);
 }
 
+@media all and (min-width: 768px) {
+  .header {
+    height: 60px;
+  }
+
+  .box-header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+@media all and (min-width: 1200px) {
+  .header {
+    width: 100vw;
+    background-color: rgba(9, 157, 141, 0.9);
+  }
+
+  .box-header {
+    max-width: 924px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .title {
-  background-color: rgba(9, 157, 141, 0.9);
   color: #fff;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -61,25 +312,23 @@ body {
   display: inline-block;
 }
 
-.title-link {
-  text-decoration: none;
-  color: #fff;
-}
-
 @media all and (min-width: 768px) {
-  .header {
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    flex-flow: row nowrap;
-  }
-
   .title {
     width: 50vw;
     padding-left: 45px;
     text-align: left;
   }
 }
+@media all and (min-width: 1200px) {
+  .title {
+    max-width: 462px;
+  }
+}
+.title-link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .nav-menu {
   list-style: none;
   background-color: rgba(20, 217, 196, 0.9);
@@ -94,11 +343,17 @@ body {
 
 @media all and (min-width: 768px) {
   .nav-menu {
-    background-color: rgba(9, 157, 141, 0.9);
+    background-color: rgba(9, 157, 141, 0);
     height: 60px;
     top: 0;
     width: 50vw;
     padding-right: 45px;
+    justify-content: flex-end;
+  }
+}
+@media all and (min-width: 1200px) {
+  .nav-menu {
+    max-width: 462px;
     justify-content: flex-end;
   }
 }
@@ -114,46 +369,6 @@ body {
 @media all and (min-width: 768px) {
   .nav-link {
     padding-left: 20px;
-  }
-}
-.container {
-  position: relative;
-}
-
-.claim-box {
-  background-color: #fff;
-  padding: 15px;
-  margin: 15px;
-  top: 360px;
-  position: absolute;
-}
-
-@media all and (min-width: 768px) {
-  .claim-box {
-    background-color: #ffffff90;
-    top: 300px;
-    width: 441px;
-    padding: 15px 30px 15px 30px;
-    margin-left: 50px;
-  }
-}
-@media all and (min-width: 1200px) {
-  .claim-box {
-    top: 429px;
-  }
-}
-.claim {
-  color: #000;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-}
-
-@media all and (min-width: 1200px) {
-  .claim {
-    font-size: 24px;
   }
 }
 /* FIRST MAIN */
@@ -245,6 +460,13 @@ body {
   margin-right: 15px;
 }
 
+/* revisar! pq no funciona */
+@media all and (min-width: 1200px) {
+  .parrafo-1 {
+    text-align: center;
+    width: 601px;
+  }
+}
 .subtitulo {
   font-size: 22px;
 }
@@ -266,35 +488,41 @@ body {
   padding: 0;
 }
 
+.bio-contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  max-width: 924px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .titulo {
   color: #099d8d;
   font-family: 'Rubik', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.contenedor-bio {
+.bio-contenido {
   text-align: center;
-  margin-bottom: 45px;
-  padding: 0 15px;
-  width: 100%;
 }
 
-.contenedor-bio h4 {
+.bio-contenido h4 {
   color: #000;
   font-size: 20px;
   font-weight: normal;
 }
 
-.foto {
-  margin-bottom: 15px;
+.bio-foto {
+  width: 180px;
+  height: auto;
+  margin: 0 auto;
   border: 4px solid #b8b8b9;
   border-radius: 5%;
-  width: 180px;
-  height: 180px;
 }
 
 .bio {
@@ -333,7 +561,6 @@ body {
 @media all and (min-width: 768px) {
   .quienes-somos .titulo {
     margin-bottom: 45px;
-    margin-top: 0;
   }
 
   .quienes-somos {
@@ -341,236 +568,49 @@ body {
     padding-right: 45px;
   }
 
-  .contenedor-bio {
-    display: flex;
-    text-align: left;
-    padding: 0;
-    margin-bottom: 60px;
-  }
-
-  .contenedor-bio:nth-child(odd) {
-    flex-direction: row-reverse;
-    text-align: right;
-  }
-
-  .subcontenedor-bio {
-    margin-top: 20px;
+  .bio-contenedor {
+    display: grid;
+    grid-template-columns: 210px 1fr 210px;
+    grid-auto-flow: dense;
+    grid-gap: 30px;
+    max-width: 924px;
+    margin: 0 auto;
   }
 
   .redes-sociales {
     justify-content: flex-start;
   }
 
-  .contenedor-bio:nth-child(odd) .subcontenedor-bio .redes-sociales {
+  .bio-contenido {
+    grid-column: span 2;
+    text-align: left;
+  }
+  .bio-contenido.izquierda {
+    text-align: right;
+    margin-left: auto;
+  }
+  .bio-contenido.izquierda .redes-sociales {
     justify-content: flex-end;
   }
 
-  .foto {
-    width: 205px;
-    height: 205px;
-  }
-
-  .contenedor-bio:nth-child(even) .subcontenedor-bio {
-    margin-left: 30px;
-  }
-
-  .contenedor-bio:nth-child(odd) .subcontenedor-bio {
-    margin-right: 30px;
-  }
-}
-@media all and (min-width: 1200px) {
-  .foto {
-    width: 278px;
-    height: 278px;
+  .bio-contenido h4 {
+    margin-top: 15px;
   }
 
   .bio {
-    width: 439px;
+    max-width: 439px;
   }
 
-  .contenedor-bio:nth-child(even) .subcontenedor-bio {
-    margin-left: 45px;
-  }
-
-  .contenedor-bio:nth-child(odd) .subcontenedor-bio {
-    margin-right: 45px;
-  }
-}
-.footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border-top: 1px solid lightgrey;
-}
-
-.enmedio {
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  color: #b8b8b9;
-  padding-top: 30px;
-  margin-bottom: 20px;
-}
-
-.nav-footer {
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-
-.nav-footer li {
-  margin-top: 20px;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: #54585a;
-  transition: color ease 0.3s;
-}
-.footer-link:hover {
-  color: #3cdbc0;
-  text-decoration: underline;
-}
-
-/* si utilizo un wraper envolviendo el contenido del body xk no me coje les medidas 100vh para hacer la linea gris? */
-.imagen-footer {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 45px;
-  margin-top: 30px;
-}
-
-/* ************CSS FORMULARIO CONTACTO*************** */
-.contenedor-form {
-  font-family: 'Open Sans', sans-serif;
-  color: #54585a;
-}
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 70px;
-}
-
-.titulo-contacto {
-  margin: 30px auto 15px auto;
-  font-size: 20px;
-  font-weight: 700;
-  color: #499d8d;
-}
-
-.texto-contacto {
-  margin: 0 30px;
-}
-
-.recomendacion {
-  margin-top: 45px;
-  color: #54585a;
-  font-size: 12px;
-}
-
-.asterisco {
-  color: #00ffda;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  padding: 0 15px;
-  margin-top: 60px;
-  text-align: left;
-}
-
-.form input {
-  width: 100%;
-}
-
-.seccion {
-  text-align: left;
-  display: block;
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.textarea {
-  width: 100%;
-  height: 105px;
-  border: 1px solid #999;
-}
-
-.button {
-  width: 100%;
-  height: 45px;
-  text-transform: uppercase;
-  color: white;
-  background-color: #499d8d;
-  border-style: none;
-  border-radius: 3px;
-  margin: 30px 0 60px 0;
-}
-
-@media all and (min-width: 768px) {
-  .footer {
+  .bio-foto {
     width: 100%;
-    position: relative;
-    border: 0 solid grey;
   }
-
-  .enmedio {
-    position: absolute;
-    margin-bottom: 15px;
-    margin-left: 30px;
-  }
-
-  .nav-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-top: 5px;
-    padding-bottom: 60px;
-    margin-right: 30px;
-  }
-
-  .imagen-footer {
-    margin: 0;
-    padding: 0;
-    margin-left: 30px;
-    position: absolute;
-    bottom: 60px;
-  }
-
-  .contacto {
-    width: 442px;
-  }
-
-  .button {
-    width: 206px;
-    height: 45px;
-    align-self: flex-end;
-  }
-
-  .navigator {
-    border-top: 1px solid lightgrey;
+  .bio-foto.derecha {
+    grid-column-start: 3;
   }
 }
 @media all and (min-width: 1200px) {
-  .footer {
-    width: 924px;
-    margin: 0 auto;
-  }
-
-  .navigator {
-    border: none;
-  }
-
-  .raya {
-    border: 1px solid lightgrey;
-    width: 100vw;
-    margin-right: 10px;
+  .bio-contenedor {
+    grid-template-columns: 278px 1fr 278px;
   }
 }
 
