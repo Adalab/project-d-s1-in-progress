@@ -38,7 +38,7 @@
 }
 
 .title {
-  color: #fff;
+  color: $color-ligth;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -66,7 +66,12 @@
 
 .title-link {
   text-decoration: none;
-  color: #fff;
+  color: $color-ligth;
+  transition: color ease 0.3s;
+}
+
+.title-link:hover {
+  color: $color-darktone;
 }
 
 .nav-menu {
@@ -78,7 +83,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #fff;
 }
 
 @media all and (min-width: 768px) {
@@ -100,12 +104,17 @@
 }
 
 .nav-link {
-  color: #fff;
+  color: $color-ligth;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color ease 0.3s;
+}
+
+.nav-link:hover {
+  color: $color-darktone;
 }
 
 @media all and (min-width: 768px) {

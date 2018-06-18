@@ -9,7 +9,7 @@
 .enmedio {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  color: #b8b8b9;
+  color: $color-ligthtone;
   padding-top: 30px;
   margin-bottom: 20px;
 }
@@ -29,11 +29,11 @@
 
 .footer-link {
   text-decoration: none;
-  color: #54585a;
+  color: $color-darktone;
   transition: color ease 0.3s;
 
   &:hover {
-    color: #3cdbc0;
+    color: $color-secondary;
     text-decoration: underline;
   }
 }
