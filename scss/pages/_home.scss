@@ -1,4 +1,10 @@
 /* FIRST MAIN */
+.ancla-equipo {
+  display: block;
+  position: relative;
+  top: -60px;
+  visibility: hidden;
+}
 
 .contenedor {
   margin-top: 70px;
@@ -152,6 +158,13 @@
 
 /* SECOND MAIN */
 
+.ancla-quienes-somos {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}
+
 .quienes-somos {
   margin: 0;
   padding: 0;
@@ -167,7 +180,7 @@
 }
 
 .titulo {
-  color: #099d8d;
+  color: $color-primary;
   font-family: 'Rubik', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
@@ -181,7 +194,7 @@
 }
 
 .bio-contenido h4 {
-  color: #000;
+  color: $color-dark;
   font-size: 20px;
   font-weight: normal;
 }
@@ -190,7 +203,7 @@
   width: 180px;
   height: auto;
   margin: 0 auto;
-  border: 4px solid #b8b8b9;
+  border: 4px solid $color-ligthtone;
   border-radius: 5%;
 }
 
@@ -198,7 +211,7 @@
   margin-bottom: 15px;
   margin-top: 15px;
   font-weight: lighter;
-  color: #54585a;
+  color: $color-darktone;
 }
 
 .redes-sociales {
@@ -210,7 +223,7 @@
 }
 
 .redes-sociales .link a {
-  color: #099d8d;
+  color: $color-primary;
 }
 
 .redes-sociales .link::before {
@@ -218,7 +231,7 @@
   margin: 5px 10px;
   width: 3px;
   height: 3px;
-  background-color: #499d8d;
+  background-color: $color-primary;
   border-radius: 10px;
   content: '';
 }
