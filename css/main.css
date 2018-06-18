@@ -266,7 +266,7 @@ body {
   display: block;
   width: 320px;
   padding-top: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .parrafo-1 {
@@ -317,6 +317,7 @@ body {
   padding-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
+  padding-bottom: 30px;
 }
 
 .subtitulo {
@@ -521,7 +522,7 @@ body {
   }
 
   .contenedor-equipo {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .wrapper2 {
@@ -544,6 +545,14 @@ body {
   .contenedor-debilidades {
     width: 50%;
     padding: 45px 30px 60px 15px;
+  }
+
+  .parrafo-2 {
+    padding-bottom: 0;
+  }
+
+  .parrafo {
+    padding-bottom: 0;
   }
 
   .quienes-somos .titulo {
