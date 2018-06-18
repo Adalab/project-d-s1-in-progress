@@ -1,37 +1,3 @@
-.contenedor-form {
-  font-family: 'Open Sans', sans-serif;
-  color: #54585a;
-}
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 70px;
-}
-
-.titulo-contacto {
-  margin: 30px auto 15px auto;
-  font-size: 20px;
-  font-weight: 700;
-  color: #499d8d;
-}
-
-.texto-contacto {
-  margin: 0 30px;
-}
-
-.recomendacion {
-  margin-top: 45px;
-  color: #54585a;
-  font-size: 12px;
-}
-
-.asterisco {
-  color: #00ffda;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -54,7 +20,7 @@
 .textarea {
   width: 100%;
   height: 105px;
-  border: 1px solid #999;
+  border: 1px solid $color-ligthtone;
 }
 
 .button {
@@ -62,7 +28,7 @@
   height: 45px;
   text-transform: uppercase;
   color: white;
-  background-color: #499d8d;
+  background-color: $color-primary;
   border-style: none;
   border-radius: 3px;
   margin: 30px 0 60px 0;

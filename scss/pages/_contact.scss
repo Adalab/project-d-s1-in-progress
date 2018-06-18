@@ -1,0 +1,33 @@
+.contenedor-form {
+  font-family: 'Open Sans', sans-serif;
+  color: $color-darktone;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.titulo-contacto {
+  margin: 30px auto 15px auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: $color-primary;
+}
+
+.texto-contacto {
+  margin: 0 30px;
+}
+
+.recomendacion {
+  margin-top: 45px;
+  color: $color-darktone;
+  font-size: 12px;
+}
+
+.asterisco {
+  color: $color-secondary;
+}
