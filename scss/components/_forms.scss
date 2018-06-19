@@ -38,3 +38,20 @@
     background-color: $color-secondary;
   }
 }
+
+//////////////////* Media del formulario de contacto *///////////////
+@media all and (min-width: 768px) {
+  .contacto {
+    width: 442px;
+  }
+
+  .button {
+    width: 206px;
+    height: 45px;
+    align-self: flex-end;
+  }
+
+  .navigator {
+    border-top: 1px solid lightgrey;
+  }
+}
